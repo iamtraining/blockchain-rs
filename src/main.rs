@@ -15,7 +15,6 @@ const DIR: &str = "./data";
 const READ: &str = "read";
 const WRITE: &str = "write";
 const EXTENSION: &str = ".json";
-const BUFF: u16 = 1024;
 
 type BoxError = Box<dyn std::error::Error + Send + Sync>;
 
