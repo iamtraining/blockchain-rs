@@ -201,7 +201,7 @@ fn last_block(dir: &str) -> Result<u64, BoxError> {
 
 #[test]
 fn test_last_block() {
-    if let Ok(max) = last_block(DIR) {
+    if let Ok(max) = last_block("./testdata") {
         assert_eq!(max, 1_u64);
     };
 }
@@ -254,7 +254,7 @@ fn create_file_name(idx: u64) -> String {
 #[test]
 fn test_create_file_name() {
     let path = create_file_name(222);
-    assert_eq!(path, "data/222.json")
+    assert_eq!(path, "./data/222.json")
 }
 
 impl Block {
