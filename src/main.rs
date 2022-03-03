@@ -202,7 +202,7 @@ fn last_block(dir: &str) -> Result<u64, BoxError> {
 #[test]
 fn test_last_block() {
     if let Ok(max) = last_block(DIR) {
-        assert_eq!(max, 1_i64);
+        assert_eq!(max, 1_u64);
     };
 }
 
